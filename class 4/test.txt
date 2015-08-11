@@ -1,0 +1,8 @@
+something
+rmotr
+python
+print
+martin
+hello
+course
+bye
