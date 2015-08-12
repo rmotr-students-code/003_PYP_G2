@@ -123,6 +123,11 @@ d_address = { 'id1': 'add1',
 
 db.tablename.query(name="whatever")
 
+d = { 'headers': ['id','name','whatever'],
+     'UUID1' : { 'id':1, 'name':'Neil... },
+     'UUID2' : { 'id':1, 'name':'Neil... },
+
+    
 
 '''
 import shelve,uuid,os
@@ -222,7 +227,7 @@ class Table(object):
         
 def tearDown():
     os.remove('imdb_db.dat')
-    os.remove('imdb_actors.dat')
+    os.remove('imdb_actors.dat')    
 
 db = use('imdb')
 db.create_table('actors', columns=['id', 'name', 'date_of_birth'])
